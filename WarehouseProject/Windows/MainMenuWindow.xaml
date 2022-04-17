@@ -449,6 +449,11 @@
             BorderBrush="{x:Null}"
             Foreground="{x:Null}" 
             Margin="115,32,112,0">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Border 
@@ -646,7 +651,8 @@
                     Grid.Column="0"
                     Grid.Row="1" 
                     Margin="52,7,30,16"
-                    Width="144" Height="22">
+                    Width="144"
+                    Height="22">
                 </TextBlock>
                 <TextBlock
                     Text="Ед.измерения"

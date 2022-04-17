@@ -31,7 +31,7 @@ namespace WarehouseProject.Windows
 
         private void btnWorkingWithProduct_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            
         }
 
         private void btnGenerateReport_Click(object sender, RoutedEventArgs e)
@@ -66,7 +66,9 @@ namespace WarehouseProject.Windows
 
         private void btnAddProduct_Click(object sender, RoutedEventArgs e)
         {
-
+            AddProductWindow openwindow = new AddProductWindow();
+            openwindow.Show();
+            this.Close();
         }
 
         private void bntDeleteItem_Click(object sender, RoutedEventArgs e)
@@ -76,7 +78,7 @@ namespace WarehouseProject.Windows
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
