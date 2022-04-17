@@ -1,0 +1,50 @@
+﻿<Window x:Class="WarehouseProject.Windows.TransitionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarehouseProject.Windows"
+        mc:Ignorable="d"
+        Title="TransitionWindow" 
+        Height="1080" 
+        Width="2000"
+        MaxHeight="1080"
+        MaxWidth="2000"
+        MinHeight="1080"
+        MinWidth="2000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"></ColumnDefinition>
+            <ColumnDefinition Width="1920*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button 
+            x:Name="btnAuthorization"
+            Click="btnAuthorization_Click"
+            Content="Авторизация"
+            FontSize="8"
+            Margin="0,10,0,989">
+        </Button>
+        <Button 
+            x:Name="btnMainWindow"
+            Click="btnMainWindow_Click"
+            Content="Главное меню"
+            FontSize="8"
+            Margin="0,65,0,934">
+        </Button>
+        <Button 
+            x:Name="btnAddProduct"
+            Click="btnAddProduct_Click"
+            Content="Добавление товара"
+            FontSize="8"
+            Margin="0,120,0,879">
+        </Button>
+        <Frame 
+            x:Name="Frame"
+            Grid.Column="1" 
+            Margin="3"
+            BorderBrush="Black"
+            BorderThickness="2">
+        </Frame>
+    </Grid>
+</Window>
