@@ -55,7 +55,8 @@
                 Foreground="#FF1D3370"
                 FontSize="48"
                 VerticalAlignment="Center"
-                HorizontalAlignment="Center"/>
+                HorizontalAlignment="Center"
+                FontWeight="Medium"/>
         </Border>
         <Border
             Grid.Column="0"
@@ -74,6 +75,7 @@
         <TextBlock
             x:Name="tbAuthorization"
             Grid.Column="0"
+            FontWeight="Medium"
             Grid.Row="2"
             Text="Авторизация"
             FontSize="58"
@@ -107,14 +109,15 @@
                 <TextBox
                     x:Name="txtLogin"
                     Text="Логин"
+                    FontWeight="Medium"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
                     FontFamily="Montserrat"
-                    FontSize="18"
-                    Margin="60 0 0 0"
+                    FontSize="20"
+                    Margin="60 5 0 0"
                     SelectionBrush="{x:Null}"
                     Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
@@ -144,19 +147,22 @@
                 <TextBox
                     x:Name="txtPassword"
                     Text="Пароль"
+                    FontWeight="Medium"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
                     FontFamily="Montserrat"
-                    FontSize="18"
-                    Margin="60 0 0 0"
+                    FontSize="20"
+                    Margin="60 5 0 0"
                     SelectionBrush="{x:Null}"
                     Style="{StaticResource MyTextBoxStyle}"/>
             </Grid>
         </Border>
         <Button
+            x:Name="bntWelcome"
+            Click="bntWelcome_Click"
             Grid.Column="0"
             Grid.Row="5" 
             Margin="782,65,782,20"
@@ -192,11 +198,13 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 FontSize="28"
+                FontWeight="Regular"
                 />
             <TextBlock 
             HorizontalAlignment="Center"
             Foreground="#FF1D3370"
-            FontSize="28">
+            FontSize="28"
+                FontWeight="Regular">
             <Hyperlink
                 Click="Hyperlink_Click">
                 службу поддержки

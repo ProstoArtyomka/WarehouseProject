@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WarehouseProject.Windows;
 
 namespace WarehouseProject
 {
@@ -33,6 +34,13 @@ namespace WarehouseProject
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void bntWelcome_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenuWindow openwindow = new MainMenuWindow();
+            openwindow.Show();
+            this.Close();
         }
     }
 }
