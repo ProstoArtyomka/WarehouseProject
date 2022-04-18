@@ -14,15 +14,16 @@
         MinWidth="1920"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <!--<Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="73*"/>
             <ColumnDefinition Width="405*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="102*"/>
-            <RowDefinition Height="146*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="621*"/>
+            <RowDefinition Height="132*"/>
+            <RowDefinition Height="135*"/>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="420*"/>
             <RowDefinition Height="59*"/>
         </Grid.RowDefinitions>
         <Button
@@ -34,7 +35,7 @@
             BorderBrush="{x:Null}" 
             Foreground="{x:Null}"
             Style="{StaticResource MyButtonStyle}"
-            Click="bntExit_Click"
+            
             Grid.Column="1"
             Grid.Row="0" 
             Margin="1516,21,71,48">
@@ -44,19 +45,19 @@
         </Button>
         <Border
             Grid.Column="1"
-            Grid.RowSpan="5" 
+            Grid.RowSpan="6" 
             Margin="0,0,1611,0" 
             BorderBrush="#FF1D3370"
             BorderThickness="1" 
             />
         <Border
             Grid.Column="0"
-            Grid.RowSpan="5"
+            Grid.RowSpan="6"
             Background="#99C2CFF5">
             <Grid>
                 <Button
                     x:Name="btnWorkingWithProduct"
-                    Click="btnWorkingWithProduct_Click"
+                    
                     Grid.Column="0"
                     Grid.Row="0"
                     HorizontalAlignment="Center"
@@ -99,7 +100,7 @@
                 </Button>
                 <Button
                     x:Name="btnGenerateReport"
-                    Click="btnGenerateReport_Click"
+                    
                     Grid.Column="0"
                     Grid.Row="0"
                     HorizontalAlignment="Center"
@@ -142,7 +143,7 @@
                 </Button>
                 <Button
                     x:Name="btnReference"
-                    Click="btnReference_Click"
+                   
                     Grid.Column="0"
                     Grid.Row="0"
                     HorizontalAlignment="Center"
@@ -195,17 +196,17 @@
             BorderBrush="{x:Null}" 
             Foreground="{x:Null}"
             Style="{StaticResource MyButtonStyle}"
-            Click="bntDeleteItem_Click"
+            
             Grid.Column="0"
-            Grid.Row="3"
-            Margin="96,510,96,11"
+            Grid.Row="4"
+            Margin="106,358,106,41" Grid.RowSpan="2"
             >
             <Button.Background>
                 <ImageBrush ImageSource="/ItemsDesign/DeleteItem.png"/>
             </Button.Background>
         </Button>
         <TextBlock
-            Text="Добавить новый товар"
+            Text="Добавить движение товара:"
             VerticalAlignment="Center"
             HorizontalAlignment="Center" 
             Background="{x:Null}"
@@ -215,135 +216,12 @@
             TextAlignment="Center"
             FontSize="38"
             Grid.Row="1"
-            Margin="125,14,1069,76"
-            Width="426"
-            Grid.Column="1">
-        </TextBlock>
-        <TextBlock
-            Text="Артикул:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center" 
-            Background="{x:Null}"
-            Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
-            TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="2"
-            Margin="336,11,1183,88"
-            Width="81"
-            Grid.Column="1">
-        </TextBlock>
-        <TextBlock
-            Text="Название:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center" 
-            Background="{x:Null}"
-            Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
-            TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="2"
-            Margin="326,92,1183,608"
-            Width="91"
+            Margin="78,23,1014,45"
             Grid.Column="1"
-            Grid.RowSpan="2">
+            Width="508"
+            Height="46">
         </TextBlock>
-        <TextBlock
-            Text="Категория:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center" 
-            Background="{x:Null}"
-            Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
-            TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="3"
-            Margin="326,68,1183,511"
-            Width="91"
-            Grid.Column="1">
-        </TextBlock>
-        <TextBlock
-            Text="Единица измерения:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center" 
-            Background="{x:Null}"
-            Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
-            TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="3"
-            Margin="238,179,1183,420"
-            Width="179"
-            Grid.Column="1">
-        </TextBlock>
-        <TextBlock
-            Text="Описание:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center" 
-            Background="{x:Null}"
-            Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
-            TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="3"
-            Margin="326,68,1183,70"
-            Width="91"
-            Grid.Column="1">
-        </TextBlock>
-        <TextBox
-            x:Name="txtArticle"
-            Grid.Column="1"
-            Grid.Row="1"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="#33C4C4C4"
-            BorderThickness="1" 
-            BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            Foreground="{x:Null}"
-            Margin="438,132,292,63"
-            Grid.RowSpan="2" 
-            SelectionBrush="{x:Null}">
-            <TextBox.Resources>
-                <Style 
-                        TargetType="Border">
-                    <Setter 
-                            Property="CornerRadius"
-                            Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <TextBox
-            x:Name="txtName"
-            Grid.Column="1"
-            Grid.Row="2"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="#33C4C4C4"
-            BorderThickness="1" 
-            BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            Foreground="{x:Null}"
-            Margin="438,77,292,593"
-            Grid.RowSpan="2" 
-            SelectionBrush="{x:Null}">
-            <TextBox.Resources>
-                <Style 
-                        TargetType="Border">
-                    <Setter 
-                            Property="CornerRadius"
-                            Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        --><!--Нужно разобраться как поменять ему цвет,и закруглить края-->
+        <!--Нужно разобраться как поменять ему цвет,и закруглить края-->
         <!--<ComboBox
             x:Name="txtCategory"
             Grid.Column="1"
@@ -365,95 +243,11 @@
                             Value="30"/>
                 </Style>
             </ComboBox.Resources>
-        </ComboBox>--><!--
-        <TextBox
-            x:Name="txtCategory"
-            Grid.Column="1"
-            Grid.Row="3"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="#33C4C4C4"
-            BorderThickness="1" 
-            BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            Margin="438,54,292,495" 
-            Foreground="{x:Null}">
-            <TextBox.Resources>
-                <Style 
-                       TargetType="Border">
-                    <Setter 
-                            Property="CornerRadius"
-                            Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
+        </ComboBox>-->
         <Button
-            x:Name="cmbStick"
-            Height="16"
-            Width="28"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            BorderBrush="{x:Null}" 
-            Foreground="{x:Null}"
-            Style="{StaticResource MyButtonStyle}"
-            Click="cmbStick_Click"
-            Grid.Column="1"
-            Grid.Row="3" 
-            Margin="1261,71,311,514">
-            <Button.Background>
-                <ImageBrush ImageSource="/ItemsDesign/ComboBoxStick.png"/>
-            </Button.Background>
-        </Button>
-        <TextBox
-            x:Name="txtUnit"
-            Grid.Column="1"
-            Grid.Row="3"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="#33C4C4C4"
-            BorderThickness="1" 
-            BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            Margin="438,155,292,394" 
-            Foreground="{x:Null}">
-            <TextBox.Resources>
-                <Style 
-                       TargetType="Border">
-                    <Setter 
-                            Property="CornerRadius"
-                            Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <TextBox
-            x:Name="txtDescription"
-            Grid.Column="1"
-            Grid.Row="3"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Background="#33C4C4C4"
-            BorderThickness="1" 
-            BorderBrush="#FF1D3370"
-            Height="176"
-            Width="870"
-            Margin="438,260,292,165" 
-            Foreground="{x:Null}">
-            <TextBox.Resources>
-                <Style 
-                       TargetType="Border">
-                    <Setter 
-                            Property="CornerRadius"
-                            Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <Button
-                x:Name="btnAddNewProduct"
-                Click="btnAddNewProduct_Click"
+                x:Name="btnSave"
                 Grid.Column="1"
-                Grid.Row="3"
+                Grid.Row="4"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Background="#FFA8BBF0"
@@ -462,7 +256,8 @@
                 Height="52"
                 Width="250"
                 Foreground="{x:Null}"
-                Margin="1068,483,282,46">
+                Margin="1279,346,51,21" 
+                Grid.RowSpan="2">
             <Button.Resources>
                 <Style 
                         TargetType="Border">
@@ -472,8 +267,8 @@
                 </Style>
             </Button.Resources>
             <TextBlock
-                        x:Name="txtAddProduct"
-                        Text="Добавить товар"
+                        x:Name="txtSave"
+                        Text="Сохранить"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
@@ -490,6 +285,500 @@
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
-        </Button>-->
+        </Button>
+        <Border
+            Grid.Column="1"
+            Grid.Row="2"
+            Grid.RowSpan="2" 
+            Background="#19A8BBF0"
+            Margin="10 10"
+            >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock
+                    Text="Артикул товара"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" 
+                    Background="{x:Null}"
+                    Foreground="Black" 
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    TextAlignment="Right"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="0 0 300 10">
+                </TextBlock>
+                <TextBlock
+                    Text="Название товара"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" 
+                    Background="{x:Null}"
+                    Foreground="Black" 
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    TextAlignment="Right"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Margin="158 34 472 44">
+                </TextBlock>
+                <TextBlock
+                    Text="Остаток на складе"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" 
+                    Background="{x:Null}"
+                    Foreground="Black" 
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    TextAlignment="Right"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Margin="142,29,472,39"
+                    Width="176">
+                </TextBlock>
+                <TextBox
+                    x:Name="txtArticleProduct"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="#33C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Height="52"
+                    Width="315"
+                    Foreground="{x:Null}"
+                    Margin="337,13,128,20" 
+                    SelectionBrush="{x:Null}"
+                    Grid.Row="0"
+                    Grid.Column="0">
+                    <TextBox.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="30"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBox
+                    x:Name="txtNameProduct"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="#33C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Height="52"
+                    Width="1115"
+                    Foreground="{x:Null}"
+                    Margin="337,13,128,21" 
+                    SelectionBrush="{x:Null}"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2">
+                    <TextBox.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="30"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <Button
+                    x:Name="cmbStick"
+                    Height="16"
+                    Width="28"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    BorderBrush="{x:Null}" 
+                    Foreground="{x:Null}"
+                    Style="{StaticResource MyButtonStyle}"
+                    Grid.Column="1"
+                    Grid.Row="1" 
+                    Margin="460 13 0 21"
+                    >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/ItemsDesign/ComboBoxStick.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox
+                    x:Name="txtRemainsProduct"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="#33C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Height="52"
+                    Width="315"
+                    Foreground="{x:Null}"
+                    Margin="337,13,128,20" 
+                    SelectionBrush="{x:Null}"
+                    Grid.Row="2"
+                    Grid.Column="0">
+                    <TextBox.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="30"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBlock
+                    Text="№ секции хранения"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" 
+                    Background="{x:Null}"
+                    Foreground="Black" 
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    TextAlignment="Right"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Margin="0 0 330 10">
+                </TextBlock>
+                <TextBox
+                    x:Name="txtNumberSection"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="#33C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Height="52"
+                    Width="315"
+                    Foreground="{x:Null}"
+                    Margin="337,13,128,20" 
+                    SelectionBrush="{x:Null}"
+                    Grid.Row="0"
+                    Grid.Column="1">
+                    <TextBox.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="30"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+                <TextBlock
+                    Text="Единица измерения"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" 
+                    Background="{x:Null}"
+                    Foreground="Black" 
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    FontSize="20"
+                    TextAlignment="Right"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Margin="0 0 330 10">
+                </TextBlock>
+                <TextBox
+                    x:Name="txtUnit"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="#33C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Height="52"
+                    Width="315"
+                    Foreground="{x:Null}"
+                    Margin="337,13,128,20" 
+                    SelectionBrush="{x:Null}"
+                    Grid.Row="3"
+                    Grid.Column="1">
+                    <TextBox.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="30"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+            </Grid>
+        </Border>
+        <TextBlock
+            Text="Вид действия"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Right"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="142 0 1247 300"
+            Width="137">
+        </TextBlock>
+        <TextBlock
+            Text="№ документа"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Right"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="142 0 1247 125"
+            Width="137">
+        </TextBlock>
+        <TextBlock
+            Text="Кол-во товара"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Right"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="142 50 1247 0"
+            Width="137">
+        </TextBlock>
+        <TextBlock
+            Text="Примечание"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Right"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="142 300 1247 0"
+            Width="137">
+        </TextBlock>
+        <TextBox
+            x:Name="txtTypeActivity"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="346 25 938 323" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox
+            x:Name="txtNumberDocument"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="346 -10 938 113" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox
+            x:Name="txtCountProduct"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="346 41 938 -10" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBlock
+            Text="№ секции хранения"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Right"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="929,38,474,338"
+            Width="197">
+        </TextBlock>
+        <TextBlock
+            Text="Текущий остаток на складе"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Center"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="490 0 0 125"
+            Width="160">
+            <TextBlock.Style>
+                <Style>
+                    <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBlock
+            Text="Дата"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" 
+            Background="{x:Null}"
+            Foreground="Black" 
+            FontWeight="Medium"
+            FontFamily="Montserrat"
+            FontSize="20"
+            TextAlignment="Center"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="510 50 0 0"
+            Width="137">
+        </TextBlock>
+        <TextBox
+            x:Name="txtType"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="1146 -10 138 290" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox
+            x:Name="txtRemainder"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="1146 -10 138 115" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox
+            x:Name="txtDate"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="52"
+            Width="316"
+            Foreground="{x:Null}"
+            Margin="1146 40 138 -10" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="30"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox
+            x:Name="txtNotes"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="#33C4C4C4"
+            BorderThickness="1" 
+            BorderBrush="#FF1D3370"
+            Height="96"
+            Width="764"
+            Foreground="{x:Null}"
+            Margin="346 304 490 0" 
+            SelectionBrush="{x:Null}"
+            Grid.Row="4"
+            Grid.Column="1">
+            <TextBox.Resources>
+                <Style 
+                    TargetType="Border">
+                    <Setter 
+                        Property="CornerRadius"
+                        Value="40"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
     </Grid>
 </Window>

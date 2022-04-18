@@ -78,7 +78,9 @@ namespace WarehouseProject.Windows
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
-            
+            AddProductMovementWindow openwindow = new AddProductMovementWindow();
+            openwindow.Show();
+            this.Close();
         }
     }
 }
