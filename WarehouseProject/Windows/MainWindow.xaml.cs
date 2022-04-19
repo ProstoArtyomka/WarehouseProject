@@ -38,7 +38,7 @@ namespace WarehouseProject
 
         private void bntWelcome_Click(object sender, RoutedEventArgs e)
         {
-            MainMenuWindow openwindow = new MainMenuWindow();
+            TransitionWindow openwindow = new TransitionWindow();
             openwindow.Show();
             this.Close();
         }
