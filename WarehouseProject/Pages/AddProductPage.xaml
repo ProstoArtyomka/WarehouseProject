@@ -19,11 +19,12 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="102*"/>
-            <RowDefinition Height="146*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="621*"/>
-            <RowDefinition Height="59*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="189*"/>
         </Grid.RowDefinitions>
         <TextBlock
             Text="Добавить новый товар"
@@ -37,19 +38,20 @@
             FontSize="20" 
             Width="241"
             Height="24"
-            Margin="87 0 0 0"/>
+            Margin="87 12 -10 12"/>
         <TextBlock
             Text="Артикул:"
             VerticalAlignment="Center"
             HorizontalAlignment="Center" 
             Background="{x:Null}"
             Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="2"
-            Width="82" Margin="602,29,432,28"/>
+            FontSize="11"
+            Grid.Row="1"
+            Width="52"
+            Height="13"
+            Margin="194,18,840,10"/>
         <TextBlock
             Text="Название:"
             VerticalAlignment="Center"
@@ -57,11 +59,13 @@
             Background="{x:Null}"
             Foreground="Black" 
             FontWeight="Medium"
-            FontFamily="Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="3"
-            Width="90" Margin="598,152,428,230"/>
+            FontSize="11"
+            Grid.Row="2"
+            Width="63"
+            Height="12"
+            Margin="198,21,855,17" />
         <TextBlock
             Text="Категория:"
             VerticalAlignment="Center"
@@ -72,8 +76,8 @@
             FontFamily="Montserrat"
             TextAlignment="Right"
             FontSize="18"
-            Grid.Row="3"
-            Width="90" Margin="598,191,428,191"/>
+            Grid.Row="4"
+            Width="90" Margin="598,38,428,368" Height="22" Grid.RowSpan="2"/>
         <TextBlock
             Text="Единица измерения:"
             VerticalAlignment="Center"
@@ -84,9 +88,9 @@
             FontFamily="Montserrat"
             TextAlignment="Right"
             FontSize="18"
-            Grid.Row="3"
+            Grid.Row="4"
            
-            Width="178" Margin="554,191,384,191"/>
+            Width="178" Margin="554,38,384,368" Height="22" Grid.RowSpan="2"/>
         <TextBlock
             Text="Описание:"
             VerticalAlignment="Center"
@@ -97,29 +101,26 @@
             FontFamily="Montserrat"
             TextAlignment="Right"
             FontSize="18"
-            Grid.Row="3"
+            Grid.Row="4"
            
-            Width="90" Margin="598,191,428,191"/>
+            Width="90" Margin="598,38,428,368" Height="22" Grid.RowSpan="2"/>
         <TextBox
             x:Name="txtArticle"
-            Grid.Row="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            Foreground="{x:Null}"
-            
-            Grid.RowSpan="2" 
-            SelectionBrush="{x:Null}" Margin="208,61,38,61">
+            Height="37"
+            Width="629"
+            Foreground="{x:Null}" 
+            SelectionBrush="{x:Null}" Margin="266,10,221,3" Grid.Row="1">
             <TextBox.Resources>
                 <Style 
                         TargetType="Border">
                     <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
@@ -134,7 +135,7 @@
             Height="52"
             Width="870"
             Foreground="{x:Null}" 
-            SelectionBrush="{x:Null}" Margin="208,136,38,216">
+            SelectionBrush="{x:Null}" Margin="208,38,38,10" Grid.RowSpan="2">
             <TextBox.Resources>
                 <Style 
                         TargetType="Border">
@@ -169,7 +170,7 @@
         </ComboBox>-->
         <TextBox
             x:Name="txtCategory"
-            Grid.Row="3"
+            Grid.Row="4"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
@@ -178,7 +179,7 @@
             Height="52"
             Width="870"
            
-            Foreground="{x:Null}" Margin="208,176,38,176">
+            Foreground="{x:Null}" Margin="208,8,38,368" Grid.RowSpan="2">
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
@@ -197,7 +198,7 @@
             BorderBrush="{x:Null}" 
             Foreground="{x:Null}"
             Style="{StaticResource MyButtonStyle}"
-            Grid.Row="3" Margin="629,194,459,194" 
+            Grid.Row="4" Margin="629,40,459,372" Grid.RowSpan="2" 
             >
             <Button.Background>
                 <ImageBrush ImageSource="/ItemsDesign/ComboBoxStick.png"/>
@@ -205,7 +206,7 @@
         </Button>
         <TextBox
             x:Name="txtUnit"
-            Grid.Row="3"
+            Grid.Row="4"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
@@ -214,7 +215,7 @@
             Height="52"
             Width="870"
             
-            Foreground="{x:Null}" Margin="208,176,38,176">
+            Foreground="{x:Null}" Margin="208,8,38,368" Grid.RowSpan="2">
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
@@ -226,16 +227,16 @@
         </TextBox>
         <TextBox
             x:Name="txtDescription"
-            Grid.Row="3"
+            Grid.Row="5"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="176"
+            Height="36"
             Width="870"
            
-            Foreground="{x:Null}" Margin="208,114,38,114">
+            Foreground="{x:Null}" Margin="208,14,38,328">
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
@@ -247,7 +248,7 @@
         </TextBox>
         <Button
                 x:Name="btnAddNewProduct"
-                Grid.Row="3"
+                Grid.Row="4"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Background="#FFA8BBF0"
@@ -255,7 +256,7 @@
                 BorderBrush="#FF1D3370"
                 Height="52"
                 Width="250"
-                Foreground="{x:Null}" Margin="518,176,348,176"
+                Foreground="{x:Null}" Margin="518,8,348,368" Grid.RowSpan="2"
                >
             <Button.Resources>
                 <Style 

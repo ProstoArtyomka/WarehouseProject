@@ -28,5 +28,10 @@ namespace WarehouseProject.Windows
         {
             Frame.Source = new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute);
         }
+
+        private void btnReference_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
+        }
     }
 }
