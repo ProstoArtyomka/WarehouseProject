@@ -28,8 +28,8 @@
         </Grid.RowDefinitions>
         <Button
             x:Name="bntExit"
-            Height="20"
-            Width="20"
+            Height="25"
+            Width="25"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             BorderBrush="{x:Null}" 
@@ -38,7 +38,7 @@
             Click="bntExit_Click"
             Grid.Column="0"
             Grid.Row="0"
-            Margin="1226,9,26,9">
+            Margin="1220 0 7 1">
             <Button.Background>
                 <ImageBrush ImageSource="/ItemsDesign/btnExit.png"/>
             </Button.Background>
@@ -58,7 +58,7 @@
                 LineHeight="39"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
-                FontFamily="Verdana"
+                FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                 FontWeight="Medium"/>
         </Border>
         <Border
@@ -88,7 +88,7 @@
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Margin="0 30 0 0"
-            FontFamily="Verdana" 
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat" 
             Height="52"
             Width="279"
             />
@@ -126,7 +126,7 @@
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
-                    FontFamily="Verdana"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     FontSize="13"
                     Margin="47 2 0 0"
                     SelectionBrush="{x:Null}"
@@ -166,7 +166,7 @@
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
-                    FontFamily="Verdana"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     FontSize="13"
                     Margin="47 2 0 0"
                     SelectionBrush="{x:Null}"
@@ -201,8 +201,8 @@
                     HorizontalAlignment="Center" 
                     Background="{x:Null}"
                     Foreground="White" 
-                    FontFamily="Verdana"
-                    FontSize="24"/>
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                    FontSize="25"/>
         </Button>
         <WrapPanel
             Grid.Column="0"

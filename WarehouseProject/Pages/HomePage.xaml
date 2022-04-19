@@ -5,195 +5,29 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WarehouseProject.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="1080"
-      d:DesignWidth="1920"
+      d:DesignHeight="682"
+      d:DesignWidth="1116"
       Title="HomePage"
-      Height="1080" 
-        Width="1920"
-        MaxHeight="1080"
-        MaxWidth="1920"
-        MinHeight="1080"
-        MinWidth="1920">
+      Height="682" 
+        Width="1116"
+        MaxHeight="682"
+        MaxWidth="1116"
+        MinHeight="682"
+        MinWidth="1116">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="73*"/>
-            <ColumnDefinition Width="405*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="102*"/>
-            <RowDefinition Height="146*"/>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="621*"/>
-            <RowDefinition Height="59*"/>
+            <RowDefinition Height="141*"/>
+            <RowDefinition Height="104*"/>
+            <RowDefinition Height="399*"/>
+            <RowDefinition Height="38*"/>
         </Grid.RowDefinitions>
-        <Button
-            x:Name="bntExit"
-            Height="33"
-            Width="33"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            BorderBrush="{x:Null}" 
-            Foreground="{x:Null}"
-            Style="{StaticResource MyButtonStyle}"
-            
-            Grid.Column="1"
-            Grid.Row="0" 
-            Margin="1516,21,71,48">
-            <Button.Background>
-                <ImageBrush ImageSource="/ItemsDesign/btnExit.png"/>
-            </Button.Background>
-        </Button>
-        <Border
-            Grid.Column="1"
-            Grid.RowSpan="5" 
-            Margin="0,0,1611,0" 
-            BorderBrush="#FF1D3370"
-            BorderThickness="1" 
-            />
-        <Border
-            Grid.Column="0"
-            Grid.RowSpan="5"
-            Background="#99C2CFF5">
-            <Grid>
-                <Button
-                    x:Name="btnWorkingWithProduct"
-                    
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Background="#3FC4C4C4"
-                    BorderThickness="1" 
-                    BorderBrush="#FF1D3370"
-                    Height="70"
-                    Width="250"
-                    Foreground="{x:Null}"
-                    Margin="0 0 0 750">
-                    <Button.Resources>
-                        <Style 
-                        TargetType="Border">
-                            <Setter 
-                            Property="CornerRadius"
-                            Value="33"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock
-                        x:Name="txtWorkingWithProduct"
-                        Text="Работа с товарами"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center" 
-                        Background="{x:Null}"
-                        Foreground="Black" 
-                        FontWeight="Medium"
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="115"
-                        Height="45"
-                        TextAlignment="Center"
-                        >
-                        <TextBlock.Style>
-                            <Style>
-                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
-                </Button>
-                <Button
-                    x:Name="btnGenerateReport"
-                    
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Background="#3FC4C4C4"
-                    BorderThickness="1" 
-                    BorderBrush="#FF1D3370"
-                    Height="70"
-                    Width="250"
-                    Foreground="{x:Null}"
-                    Margin="0 0 0 500">
-                    <Button.Resources>
-                        <Style 
-                        TargetType="Border">
-                            <Setter 
-                            Property="CornerRadius"
-                            Value="33"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock
-                        x:Name="txtGenerateReport"
-                        Text="Сформировать отчет"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center" 
-                        Background="{x:Null}"
-                        Foreground="Black" 
-                        FontWeight="Medium"
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="145"
-                        Height="45"
-                        TextAlignment="Center"
-                        >
-                        <TextBlock.Style>
-                            <Style>
-                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
-                </Button>
-                <Button
-                    x:Name="btnReference"
-                    
-                    Grid.Column="0"
-                    Grid.Row="0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Background="#3FC4C4C4"
-                    BorderThickness="1" 
-                    BorderBrush="#FF1D3370"
-                    Height="70"
-                    Width="250"
-                    Foreground="{x:Null}"
-                    Margin="0 0 0 250">
-                    <Button.Resources>
-                        <Style 
-                        TargetType="Border">
-                            <Setter 
-                            Property="CornerRadius"
-                            Value="33"/>
-                        </Style>
-                    </Button.Resources>
-                    <TextBlock
-                        x:Name="txtReference"
-                        Text="Справка"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center" 
-                        Background="{x:Null}"
-                        Foreground="Black" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="140"
-                        Height="25"
-                        FontWeight="Medium"
-                        TextAlignment="Center"
-                        >
-                        <TextBlock.Style>
-                            <Style>
-                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
-                            </Style>
-                        </TextBlock.Style>
-                    </TextBlock>
-                </Button>
-            </Grid>
-        </Border>
         <WrapPanel
-            Grid.Column="1"
-            Grid.Row="1"
             VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Margin="110,85,610,2" 
-            Height="52"
-            Width="890">
+            HorizontalAlignment="Left"
+            Margin="70,74,0,35" Height="32" Width="538">
             <Button
                     x:Name="btnSortingArticle"
                     
@@ -204,16 +38,16 @@
                     Background="#33C4C4C4"
                     BorderThickness="1" 
                     BorderBrush="#FF1D3370"
-                    Height="52"
-                    Width="250"
-                    Foreground="{x:Null}"
-                    Margin="0 0 60 0">
+                    Height="32"
+                    Width="156"
+                    Margin="0 0 35 0"
+                    Foreground="{x:Null}">
                 <Button.Resources>
                     <Style 
                         TargetType="Border">
                         <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                     </Style>
                 </Button.Resources>
                 <TextBlock
@@ -223,9 +57,10 @@
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
                         Foreground="#FF1D3370" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="117"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="72"
+                        Height="13"
                         FontWeight="Medium"
                         TextAlignment="Center"
                         >
@@ -246,16 +81,17 @@
                     Background="#33C4C4C4"
                     BorderThickness="1" 
                     BorderBrush="#FF1D3370"
-                    Height="52"
-                    Width="250"
+                    Height="32"
+                    Width="156"
+                    Margin="0 0 35 0"
                     Foreground="{x:Null}"
-                    Margin="0 0 60 0">
+                    >
                 <Button.Resources>
                     <Style 
                         TargetType="Border">
                         <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                     </Style>
                 </Button.Resources>
                 <TextBlock
@@ -266,9 +102,10 @@
                         Background="{x:Null}"
                         FontWeight="Medium"
                         Foreground="#FF1D3370" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="127"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="77"
+                        Height="13"
                         TextAlignment="Center"
                         >
                     <TextBlock.Style>
@@ -288,15 +125,15 @@
                     Background="#33C4C4C4"
                     BorderThickness="1" 
                     BorderBrush="#FF1D3370"
-                    Height="52"
-                    Width="250"
+                    Height="32"
+                    Width="156"
                     Foreground="{x:Null}">
                 <Button.Resources>
                     <Style 
                         TargetType="Border">
                         <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                     </Style>
                 </Button.Resources>
                 <TextBlock
@@ -306,10 +143,11 @@
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
                         Foreground="#FF1D3370" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
                         FontWeight="Medium"
-                        Width="128"
+                        Width="78"
+                        Height="13"
                         TextAlignment="Center"
                         >
                     <TextBlock.Style>
@@ -321,24 +159,26 @@
             </Button>
         </WrapPanel>
         <WrapPanel
-            Grid.Column="1"
-            Grid.Row="2"
+            Grid.Row="1"
             VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Margin="115,50,178,0"
-            Height="58" Width="1327">
+            HorizontalAlignment="Left"
+            Margin="82,-4,-10,56" 
+            Height="42"
+            Width="820">
             <TextBlock
                 Text="Сортировка по: "
                 TextAlignment="Right"
-                FontSize="24"
+                FontSize="15"
                 Grid.Column="0"
                 FontWeight="Medium"
                 Grid.Row="0"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                Width="250"
+                Width="120"
+                Height="19"
+                FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                 Foreground="Black"
-                Margin="0 0 60 0"/>
+                Margin="0 0 59 0"/>
             <Button
                     x:Name="btnSortinTheNameList"
                     
@@ -349,16 +189,17 @@
                     Background="#33C4C4C4"
                     BorderThickness="1" 
                     BorderBrush="#FF1D3370"
-                    Height="52"
-                    Width="250"
+                    Height="32"
+                    Width="156"
                     Foreground="{x:Null}"
-                    Margin="0 0 480 0">
+                    Margin="0 0 260 0"
+                    >
                 <Button.Resources>
                     <Style 
                         TargetType="Border">
                         <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                     </Style>
                 </Button.Resources>
                 <TextBlock
@@ -368,10 +209,11 @@
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
                         Foreground="#FF1D3370" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="77"
+                        Height="13"
                         FontWeight="Medium"
-                        Width="127"
                         TextAlignment="Center"
                         >
                     <TextBlock.Style>
@@ -391,15 +233,15 @@
                 Background="#FFA8BBF0"
                 BorderThickness="1" 
                 BorderBrush="#FF1D3370"
-                Height="52"
-                Width="250"
+                Height="32"
+                Width="156"
                 Foreground="{x:Null}">
                 <Button.Resources>
                     <Style 
                         TargetType="Border">
                         <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                     </Style>
                 </Button.Resources>
                 <TextBlock
@@ -409,9 +251,10 @@
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
                         Foreground="White" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="151"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="92"
+                        Height="13"
                         FontWeight="Medium"
                         TextAlignment="Center"
                         >
@@ -423,33 +266,16 @@
                 </TextBlock>
             </Button>
         </WrapPanel>
-        <Button
-            x:Name="bntDeleteItem"
-            Height="80"
-            Width="80"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            BorderBrush="{x:Null}" 
-            Foreground="{x:Null}"
-            Style="{StaticResource MyButtonStyle}"
-            
-            Grid.Column="0"
-            Grid.Row="3"
-            Margin="96,510,96,11"
-            >
-            <Button.Background>
-                <ImageBrush ImageSource="/ItemsDesign/DeleteItem.png"/>
-            </Button.Background>
-        </Button>
         <ListView
             x:Name="ListProduct"
-            Grid.Column="1"
-            Grid.Row="3"
+            Grid.Row="1"
             ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
             Background="#59C4C4C4"
             BorderBrush="{x:Null}"
-            Foreground="{x:Null}" 
-            Margin="115,32,112,0">
+            Foreground="{x:Null}"
+            Margin="70,53"
+            Grid.RowSpan="2"
+            >
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
@@ -461,7 +287,7 @@
                 Grid.Column="1"
                 Grid.Row="3"
                 Height="180"
-                Margin="180 0 180 250"
+                
                 BorderThickness="1"
                 CornerRadius="10"
                 Background="White">
@@ -490,7 +316,7 @@
                     FontFamily="Montserrat"
                     TextAlignment="Left"
                     FontSize="18"
-                    Margin="52,16,112,7"
+                    
                     Grid.Column="0"
                     Grid.Row="0" Width="62" Height="22">
                             </TextBlock>
@@ -506,7 +332,7 @@
                     FontSize="18"
                     Grid.Column="0"
                     Grid.Row="1" 
-                    Margin="52,7,30,16"
+                    
                     Width="144" Height="22">
                             </TextBlock>
                             <TextBlock
@@ -519,7 +345,7 @@
                     FontFamily="Montserrat"
                     TextAlignment="Left"
                     FontSize="18"
-                    Margin="52,1,65,21"
+                    
                     Grid.Column="0"
                     Grid.Row="2" 
                     Width="109" Height="22"/>
@@ -533,7 +359,7 @@
                     FontFamily="Montserrat"
                     TextAlignment="Left"
                     FontSize="18"
-                    Margin="52,39,30,27"
+                   
                     Grid.Column="0"
                     Grid.Row="2" 
                     Width="144" 
@@ -549,7 +375,7 @@
                     FontFamily="Montserrat"
                     TextAlignment="Left"
                     FontSize="18"
-                    Margin="8,39,148,27"
+                    
                     Grid.Column="2"
                     Grid.Row="2" 
                     Width="144" 
@@ -569,7 +395,7 @@
                     Grid.Column="4"
                     Grid.RowSpan="2"
                     Grid.Row="1" 
-                    Margin="18,0 ,140,70"
+                    
                     Width="156"
                     Height="22">
                             </TextBlock>
@@ -583,7 +409,7 @@
                     FontFamily="Montserrat"
                     TextAlignment="Left"
                     FontSize="16"
-                    Margin="14,12,83,10"
+                  
                     Grid.Column="4"
                     Grid.Row="2" 
                     Width="213" 
@@ -602,14 +428,14 @@
         </ListView>
 
         <!--Это тестовый шаблон!-->
-        <Border 
-                Grid.Column="1"
-                Grid.Row="3"
-                Height="170"
-                Margin="169,79,191,362"
+        <Border
+                Grid.Row="1"
                 BorderThickness="1"
                 CornerRadius="10"
-                Background="White">
+                Background="White"
+                Margin="98,84,204,293" 
+                Grid.RowSpan="2"
+            >
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="226*"/>
@@ -628,97 +454,100 @@
                 <TextBlock
                     Text="Артикул"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     FontWeight="Light"
-                    FontFamily="Montserrat"
                     TextAlignment="Left"
-                    FontSize="18"
-                    Margin="52,16,112,7"
+                    FontSize="11"
+                    Width="47"
+                    Height="13"
                     Grid.Column="0"
-                    Grid.Row="0" Width="62" Height="22">
+                    Grid.Row="0"
+                    Margin="36 0 0 0">
                 </TextBlock>
                 <TextBlock
                     Text="Название товара"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     FontWeight="Medium"
-                    FontFamily="Montserrat"
                     TextAlignment="Left"
-                    FontSize="18"
+                    FontSize="10"
                     Grid.Column="0"
                     Grid.Row="1" 
-                    Margin="52,7,30,16"
-                    Width="144"
-                    Height="22">
+                    
+                    Width="100"
+                    Height="13"
+                    Margin="36 0 0 3">
                 </TextBlock>
                 <TextBlock
                     Text="Ед.измерения"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
                     FontWeight="Light"
-                    FontFamily="Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     TextAlignment="Left"
-                    FontSize="18"
-                    Margin="52,1,65,21"
+                    FontSize="11"
+                   
                     Grid.Column="0"
                     Grid.Row="2" 
-                    Width="109" Height="22"/>
+                    Width="81" 
+                    Height="13"
+                    Margin="36 0 0 5"/>
                 <TextBlock
                     Text="Остаток на складе"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
                     FontWeight="Light"
-                    FontFamily="Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     TextAlignment="Left"
-                    FontSize="18"
-                    Margin="52,39,30,27"
+                    FontSize="11"
+                   
                     Grid.Column="0"
-                    Grid.Row="2" 
-                    Width="144" 
-                    Grid.RowSpan="2" Height="22">
-                </TextBlock>
+                    Grid.Row="3" 
+                    Width="106" 
+                    Height="13"
+                    Margin="36 0 0 8"/>
                 <TextBlock
                     Text="№ Секции"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
                     FontWeight="Light"
-                    FontFamily="Montserrat"
-                    TextAlignment="Left"
-                    FontSize="18"
-                    Margin="8,39,148,27"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                    TextAlignment="Center"
+                    FontSize="11"
+                    
                     Grid.Column="2"
-                    Grid.Row="2" 
-                    Width="144" 
-                    Grid.RowSpan="2" 
-                    Height="22">
+                    Grid.Row="3" 
+                    Width="59" 
+                    Height="14"
+                    Margin="36 0 0 8">
                 </TextBlock>
                 <TextBlock
                     Text="Категория товара:"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Center" 
+                    HorizontalAlignment="Left" 
                     Background="{x:Null}"
                     Foreground="Black" 
                     FontWeight="Medium"
-                    FontFamily="Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     TextAlignment="Left"
-                    FontSize="18"
-                    Grid.Column="4"
-                    Grid.RowSpan="2"
-                    Grid.Row="1" 
-                    Margin="18,0 ,140,70"
-                    Width="156"
-                    Height="22">
-                </TextBlock>
+                    FontSize="11"
+                    Grid.Column="4" 
+                    Grid.Row="1"
+                    Width="106"
+                    Height="13" 
+                    Margin="36 0 0 3"/>
                 <TextBlock
                     Text=""
                     VerticalAlignment="Center"
@@ -726,18 +555,19 @@
                     Background="{x:Null}"
                     Foreground="{x:Null}" 
                     FontWeight="Medium"
-                    FontFamily="Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
                     TextAlignment="Left"
-                    FontSize="16"
-                    Margin="14,12,83,10"
+                    FontSize="11"
+                    
                     Grid.Column="4"
                     Grid.Row="2" 
-                    Width="213" 
-                    Height="22" 
-                    TextDecorations="{x:Null}">
+                    Width="160" 
+                    Height="12" 
+                    TextDecorations="{x:Null}"
+                    Margin="29 -6 0  0">
                     <Hyperlink
-                 
-                        TextDecorations="{x:Null}">
+                        TextDecorations="{x:Null}" 
+                        Foreground="#FF4972E3">
                 Добавить движение товара
                 </Hyperlink>
                 </TextBlock>

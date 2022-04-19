@@ -24,19 +24,9 @@ namespace WarehouseProject.Windows
             InitializeComponent();
         }
 
-        private void btnAuthorization_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Source = new Uri("..\\..\\Pages\\MainMenu.xaml", UriKind.RelativeOrAbsolute);
-        }
-
-        private void btnMainWindow_Click(object sender, RoutedEventArgs e)
+        private void btnWorkingWithProduct_Click(object sender, RoutedEventArgs e)
         {
             Frame.Source = new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute);
-        }
-
-        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }

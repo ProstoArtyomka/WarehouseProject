@@ -6,45 +6,224 @@
         xmlns:local="clr-namespace:WarehouseProject.Windows"
         mc:Ignorable="d"
         Title="TransitionWindow" 
-        Height="1080" 
-        Width="2000"
-        MaxHeight="1080"
-        MaxWidth="2000"
-        MinHeight="1080"
-        MinWidth="2000"
+        Height="720" 
+        Width="1280"
+        MaxHeight="720"
+        MaxWidth="1280"
+        MinHeight="720"
+        MinWidth="1280"
         WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="80*"></ColumnDefinition>
-            <ColumnDefinition Width="1920*"></ColumnDefinition>
+            <ColumnDefinition Width="164*"/>
+            <ColumnDefinition Width="1116*"/>
         </Grid.ColumnDefinitions>
-        <Button 
-            x:Name="btnAuthorization"
-            Click="btnAuthorization_Click"
-            Content="Авторизация"
-            FontSize="8"
-            Margin="0,10,0,989">
-        </Button>
-        <Button 
-            x:Name="btnMainWindow"
-            Click="btnMainWindow_Click"
-            Content="Главное меню"
-            FontSize="8"
-            Margin="0,65,0,934">
-        </Button>
-        <Button 
-            x:Name="btnAddProduct"
-            Click="btnAddProduct_Click"
-            Content="Добавление товара"
-            FontSize="8"
-            Margin="0,120,0,879">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="682*"/>
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Column="0"
+            Grid.RowSpan="2"
+            Background="#99C2CFF5">
+            <Grid>
+                <Button
+                    x:Name="btnWorkingWithProduct"
+                    Click="btnWorkingWithProduct_Click"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Background="#3FC4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Foreground="{x:Null}"
+                    Width="126"
+                    Height="38"
+                    Margin="0 66 0 0">
+                    <Button.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock
+                        x:Name="txtWorkingWithProduct"
+                        Text="Работа с товарами"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center" 
+                        Background="{x:Null}"
+                        Foreground="Black" 
+                        FontWeight="Medium"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="96"
+                        Height="25"
+                        TextAlignment="Center">
+                        <TextBlock.Style>
+                            <Style>
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Button>
+                <Button
+                    x:Name="btnGenerateReport"
+     
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Background="#3FC4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Foreground="{x:Null}"
+                    Margin="0 133 0 0"
+                    Width="126"
+                    Height="38">
+                    <Button.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock
+                        x:Name="txtGenerateReport"
+                        Text="Сформировать отчет"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center" 
+                        Background="{x:Null}"
+                        Foreground="Black" 
+                        FontWeight="Medium"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="104"
+                        Height="24"
+                        TextAlignment="Center"
+                        >
+                        <TextBlock.Style>
+                            <Style>
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Button>
+                <Button
+                    x:Name="btnReference"
+
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Background="#3FC4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Foreground="{x:Null}"
+                    Width="126"
+                    Height="38"
+                    Margin="0 200 0 0">
+                    <Button.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock
+                        x:Name="txtReference"
+                        Text="Справка"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center" 
+                        Background="{x:Null}"
+                        Foreground="Black" 
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="11"
+                        Width="45"
+                        Height="12"
+                        FontWeight="Medium"
+                        TextAlignment="Center"
+                        >
+                        <TextBlock.Style>
+                            <Style>
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Button>
+                <Button
+                    x:Name="btBack"
+
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Background="#00C4C4C4"
+                    BorderThickness="1" 
+                    BorderBrush="#FF1D3370"
+                    Foreground="{x:Null}"
+                    Width="126"
+                    Height="32"
+                    Margin="0 0 0 39">
+                    <Button.Resources>
+                        <Style 
+                        TargetType="Border">
+                            <Setter 
+                            Property="CornerRadius"
+                            Value="15"/>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock
+                        x:Name="txtBack"
+                        Text="Назад"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center" 
+                        Background="{x:Null}"
+                        Foreground="Black" 
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                        FontSize="12"
+                        Width="36"
+                        Height="13"
+                        FontWeight="Medium"
+                        TextAlignment="Center">
+                        <TextBlock.Style>
+                            <Style>
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Button>
+                <Border
+                    BorderBrush="#FF1D3370"
+                    Grid.Row="0"
+                    BorderThickness="1" 
+                    Margin="161,0,0,0"/>
+            </Grid>
+        </Border>
+        <Button
+            x:Name="bntExit"
+            Height="25"
+            Width="25"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            BorderBrush="{x:Null}" 
+            Foreground="{x:Null}"
+            Style="{StaticResource MyButtonStyle}"
+            Grid.Column="1"
+            Grid.Row="0"
+            Margin="1050 0 0 1">
+            <Button.Background>
+                <ImageBrush ImageSource="/ItemsDesign/btnExit.png"/>
+            </Button.Background>
         </Button>
         <Frame 
             x:Name="Frame"
-            Grid.Column="1" 
-            Margin="3"
-            BorderBrush="Black"
-            BorderThickness="2">
+            Grid.Column="1"
+            Grid.Row="1">
         </Frame>
     </Grid>
 </Window>
