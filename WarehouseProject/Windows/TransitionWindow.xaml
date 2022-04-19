@@ -71,7 +71,7 @@
                 </Button>
                 <Button
                     x:Name="btnGenerateReport"
-     
+                    Click="btnGenerateReport_Click"
                     Grid.Column="0"
                     Grid.Row="0"
                     HorizontalAlignment="Center"

@@ -33,5 +33,10 @@ namespace WarehouseProject.Windows
         {
             Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
         }
+
+        private void btnGenerateReport_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Source = new Uri("..\\..\\Pages\\AddProductMovePage.xaml", UriKind.RelativeOrAbsolute);
+        }
     }
 }

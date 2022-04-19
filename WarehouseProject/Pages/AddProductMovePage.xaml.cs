@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WarehouseProject.Windows
+namespace WarehouseProject.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AddProductMovementWindow.xaml
+    /// Логика взаимодействия для AddProductMovePage.xaml
     /// </summary>
-    public partial class AddProductMovementWindow : Window
+    public partial class AddProductMovePage : Page
     {
-        public AddProductMovementWindow()
+        public AddProductMovePage()
         {
             InitializeComponent();
         }
