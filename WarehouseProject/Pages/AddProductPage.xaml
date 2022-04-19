@@ -51,7 +51,7 @@
             Grid.Row="1"
             Width="52"
             Height="13"
-            Margin="194,18,840,10"/>
+            Margin="194 0 840 0"/>
         <TextBlock
             Text="Название:"
             VerticalAlignment="Center"
@@ -64,8 +64,8 @@
             FontSize="11"
             Grid.Row="2"
             Width="63"
-            Height="12"
-            Margin="198,21,855,17" />
+            Height="13"
+            Margin="194 0 854 0" />
         <TextBlock
             Text="Категория:"
             VerticalAlignment="Center"
@@ -73,37 +73,39 @@
             Background="{x:Null}"
             Foreground="Black" 
             FontWeight="Medium"
-            FontFamily="Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="4"
-            Width="90" Margin="598,38,428,368" Height="22" Grid.RowSpan="2"/>
+            FontSize="11"
+            Grid.Row="3"
+            Width="64"
+            Height="13"
+            Margin="194 0 854 0"/>
         <TextBlock
             Text="Единица измерения:"
             VerticalAlignment="Center"
             HorizontalAlignment="Center" 
             Background="{x:Null}"
             Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Right"
-            FontSize="18"
+            FontSize="11"
             Grid.Row="4"
-           
-            Width="178" Margin="554,38,384,368" Height="22" Grid.RowSpan="2"/>
+            Width="124"
+            Height="13"
+            Margin="137 0 855 0"/>
         <TextBlock
             Text="Описание:"
             VerticalAlignment="Center"
             HorizontalAlignment="Center" 
             Background="{x:Null}"
             Foreground="Black" 
-            FontWeight="Medium"
-            FontFamily="Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Right"
-            FontSize="18"
-            Grid.Row="4"
-           
-            Width="90" Margin="598,38,428,368" Height="22" Grid.RowSpan="2"/>
+            FontSize="11"
+            Grid.Row="5"
+            Width="64"
+            Height="13"
+            Margin="186 27 846 320"/>
         <TextBox
             x:Name="txtArticle"
             HorizontalAlignment="Center"
@@ -113,8 +115,10 @@
             BorderBrush="#FF1D3370"
             Height="37"
             Width="629"
+            Margin="266 3 221 0"
+            Grid.Row="1"
             Foreground="{x:Null}" 
-            SelectionBrush="{x:Null}" Margin="266,10,221,3" Grid.Row="1">
+            SelectionBrush="{x:Null}">
             <TextBox.Resources>
                 <Style 
                         TargetType="Border">
@@ -126,22 +130,23 @@
         </TextBox>
         <TextBox
             x:Name="txtName"
-            Grid.Row="3"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
+            Height="37"
+            Width="629"
+            Margin="266 3 221 0"
+            Grid.Row="2"
             Foreground="{x:Null}" 
-            SelectionBrush="{x:Null}" Margin="208,38,38,10" Grid.RowSpan="2">
+            SelectionBrush="{x:Null}"  >
             <TextBox.Resources>
                 <Style 
                         TargetType="Border">
                     <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
@@ -170,40 +175,25 @@
         </ComboBox>-->
         <TextBox
             x:Name="txtCategory"
-            Grid.Row="4"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-           
-            Foreground="{x:Null}" Margin="208,8,38,368" Grid.RowSpan="2">
+            Height="37"
+            Width="629"
+            Margin="266 3 221 0"
+            Grid.Row="3"
+            Foreground="{x:Null}"  >
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
                     <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Button
-            x:Name="cmbStick"
-            Height="16"
-            Width="28"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            BorderBrush="{x:Null}" 
-            Foreground="{x:Null}"
-            Style="{StaticResource MyButtonStyle}"
-            Grid.Row="4" Margin="629,40,459,372" Grid.RowSpan="2" 
-            >
-            <Button.Background>
-                <ImageBrush ImageSource="/ItemsDesign/ComboBoxStick.png"/>
-            </Button.Background>
-        </Button>
         <TextBox
             x:Name="txtUnit"
             Grid.Row="4"
@@ -212,16 +202,16 @@
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="52"
-            Width="870"
-            
-            Foreground="{x:Null}" Margin="208,8,38,368" Grid.RowSpan="2">
+            Height="37"
+            Width="629"
+            Margin="266 3 221 0"
+            Foreground="{x:Null}">
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
                     <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
@@ -233,10 +223,11 @@
             Background="#33C4C4C4"
             BorderThickness="1" 
             BorderBrush="#FF1D3370"
-            Height="36"
-            Width="870"
+            Height="114"
+            Width="629"
+            Margin="266 0 221 230"
            
-            Foreground="{x:Null}" Margin="208,14,38,328">
+            Foreground="{x:Null}">
             <TextBox.Resources>
                 <Style 
                        TargetType="Border">
@@ -248,22 +239,23 @@
         </TextBox>
         <Button
                 x:Name="btnAddNewProduct"
-                Grid.Row="4"
+                Grid.Row="5"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Background="#FFA8BBF0"
                 BorderThickness="1" 
                 BorderBrush="#FF1D3370"
-                Height="52"
-                Width="250"
-                Foreground="{x:Null}" Margin="518,8,348,368" Grid.RowSpan="2"
+                Height="32"
+                Width="156"
+                Foreground="{x:Null}"
+                Margin="729 192 211 130"
                >
             <Button.Resources>
                 <Style 
                         TargetType="Border">
                     <Setter 
                             Property="CornerRadius"
-                            Value="30"/>
+                            Value="15"/>
                 </Style>
             </Button.Resources>
             <TextBlock
@@ -273,9 +265,10 @@
                         HorizontalAlignment="Center" 
                         Background="{x:Null}"
                         Foreground="White" 
-                        FontFamily="Montserrat"
-                        FontSize="20"
-                        Width="250"
+                        FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
+                        FontSize="11"
+                        Width="92"
+                        Height="13"
                         FontWeight="Medium"
                         TextAlignment="Center"
                         >
