@@ -18,7 +18,7 @@
             </Setter>
         </Style>
 
-        <!--Для TextBox, наведение не видно-->
+        <!--Для TextBox, кастом-->
         <Style x:Key="MyTextBoxStyle" BasedOn="{StaticResource {x:Type TextBox}}" TargetType="{x:Type TextBox}">
             <Setter Property="Template">
                 <Setter.Value>
@@ -40,8 +40,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-
-
+        
+        <!--Для DatePicker, кастом-->
     </Application.Resources>
 </Application>

@@ -76,8 +76,14 @@
     <Compile Include="Pages\AddProductPage.xaml.cs">
       <DependentUpon>AddProductPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ContactCustomerSupportPage.xaml.cs">
+      <DependentUpon>ContactCustomerSupportPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StatementProductPage.xaml.cs">
+      <DependentUpon>StatementProductPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\TransitionWindow.xaml.cs">
       <DependentUpon>TransitionWindow.xaml</DependentUpon>
@@ -90,7 +96,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ContactCustomerSupportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StatementProductPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

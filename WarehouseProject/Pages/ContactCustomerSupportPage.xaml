@@ -1,0 +1,31 @@
+﻿<Page x:Class="WarehouseProject.Pages.ContactCustomerSupportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WarehouseProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="682"
+      d:DesignWidth="1116"
+      Title="ContactCustomerSupportPage"
+      Height="682"
+      Width="1116"
+      MaxHeight="682"
+      MaxWidth="1116"
+      MinHeight="682"
+      MinWidth="1116">
+    <Grid>
+        <WrapPanel
+        <TextBlock 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="15"
+            FontWeight="Regular">
+            <Hyperlink
+                Click="Hyperlink_Click">
+                службу поддержки
+            </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>
+

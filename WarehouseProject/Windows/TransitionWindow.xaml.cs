@@ -26,17 +26,22 @@ namespace WarehouseProject.Windows
 
         private void btnWorkingWithProduct_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Source = new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute);
+            //Frame.Source = new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute);
+            //Для тестов работы листов
+            //Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
+            //Frame.Source = new Uri("..\\..\\Pages\\AddProductMovePage.xaml", UriKind.RelativeOrAbsolute);
+            //Frame.Source = new Uri("..\\..\\Pages\\StatementProductPage.xaml", UriKind.RelativeOrAbsolute);
+            Frame.Source = new Uri("..\\..\\Pages\\ContactCustomerSupportPage.xaml", UriKind.RelativeOrAbsolute);
         }
 
         private void btnReference_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
+
         }
 
         private void btnGenerateReport_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Source = new Uri("..\\..\\Pages\\AddProductMovePage.xaml", UriKind.RelativeOrAbsolute);
+
         }
     }
 }

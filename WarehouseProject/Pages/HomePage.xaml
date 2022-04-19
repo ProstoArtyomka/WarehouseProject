@@ -8,12 +8,12 @@
       d:DesignHeight="682"
       d:DesignWidth="1116"
       Title="HomePage"
-      Height="682" 
-        Width="1116"
-        MaxHeight="682"
-        MaxWidth="1116"
-        MinHeight="682"
-        MinWidth="1116">
+      Height="682"
+      Width="1116"
+      MaxHeight="682"
+      MaxWidth="1116"
+      MinHeight="682"
+      MinWidth="1116">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
