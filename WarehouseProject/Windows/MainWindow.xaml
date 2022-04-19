@@ -83,7 +83,7 @@
             Grid.Row="2"
             TextAlignment="Center"
             Text="Авторизация"
-            FontSize="42"
+            FontSize="40"
             LineHeight="48.76"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"

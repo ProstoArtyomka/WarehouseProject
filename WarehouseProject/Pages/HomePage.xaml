@@ -545,7 +545,7 @@
                     FontSize="11"
                     Grid.Column="4" 
                     Grid.Row="1"
-                    Width="106"
+                    Width="109"
                     Height="13" 
                     Margin="36 0 0 3"/>
                 <TextBlock
@@ -564,7 +564,7 @@
                     Width="160" 
                     Height="12" 
                     TextDecorations="{x:Null}"
-                    Margin="29 -6 0  0">
+                    Margin="28 -6 0  0">
                     <Hyperlink
                         TextDecorations="{x:Null}" 
                         Foreground="#FF4972E3">
