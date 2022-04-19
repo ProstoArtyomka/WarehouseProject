@@ -58,7 +58,7 @@
                 LineHeight="39"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
-                FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
                 FontWeight="Medium"/>
         </Border>
         <Border
@@ -88,7 +88,7 @@
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Margin="0 30 0 0"
-            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat" 
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             Height="52"
             Width="279"
             />
@@ -126,7 +126,7 @@
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
-                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
                     FontSize="13"
                     Margin="47 2 0 0"
                     SelectionBrush="{x:Null}"
@@ -166,7 +166,7 @@
                     Background="{x:Null}"
                     BorderBrush="{x:Null}" 
                     Foreground="#66000000" 
-                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
                     FontSize="13"
                     Margin="47 2 0 0"
                     SelectionBrush="{x:Null}"
@@ -201,7 +201,7 @@
                     HorizontalAlignment="Center" 
                     Background="{x:Null}"
                     Foreground="White" 
-                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+                    FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
                     FontSize="25"/>
         </Button>
         <WrapPanel

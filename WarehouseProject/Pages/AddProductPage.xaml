@@ -32,7 +32,7 @@
             Background="{x:Null}"
             Foreground="Black" 
             FontWeight="Medium"
-            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
             TextAlignment="Center"
             FontSize="20" 
             Width="241"
