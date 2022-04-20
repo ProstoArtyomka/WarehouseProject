@@ -209,5 +209,10 @@
   <ItemGroup>
     <Resource Include="ItemsDesign\DatePicker.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ItemsDesign\DownListView.png" />
+    <Resource Include="ItemsDesign\LineListView.png" />
+    <Resource Include="ItemsDesign\UpListView.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
