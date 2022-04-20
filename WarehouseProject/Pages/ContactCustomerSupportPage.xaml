@@ -15,15 +15,25 @@
       MinHeight="682"
       MinWidth="1116">
     <Grid>
-        <WrapPanel
+        <TextBlock
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Width="545"
+            Height="29"
+            Margin="269 0 0 260"
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
+            FontSize="24"
+            Text="Возникли вопросы по работе приложения" Foreground="#FF002792">
+                
+            </TextBlock>
         <TextBlock 
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            FontSize="15"
-            FontWeight="Regular">
-            <Hyperlink
-                Click="Hyperlink_Click">
-                службу поддержки
+            FontFamily="/WarehouseProject;component/Montserrat/#Montserrat Medium"
+            FontSize="24"
+            Margin="0 0 35 160">
+            <Hyperlink>
+                Связаться со службой поддержки
             </Hyperlink>
         </TextBlock>
     </Grid>
