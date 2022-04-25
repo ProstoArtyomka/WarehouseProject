@@ -23,6 +23,8 @@ namespace WarehouseProject.Pages
         public HomePage()
         {
             InitializeComponent();
+
         }
+
     }
 }

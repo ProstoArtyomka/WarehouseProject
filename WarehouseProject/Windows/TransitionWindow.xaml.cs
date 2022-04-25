@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WarehouseProject.Pages;
 
 namespace WarehouseProject.Windows
 {
@@ -26,7 +27,7 @@ namespace WarehouseProject.Windows
 
         private void btnWorkingWithProduct_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Source = new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute);
+            Frame.Navigate(new Uri("..\\..\\Pages\\HomePage.xaml", UriKind.RelativeOrAbsolute));
             //Для тестов работы листов
             //Frame.Source = new Uri("..\\..\\Pages\\AddProductPage.xaml", UriKind.RelativeOrAbsolute);
             //Frame.Source = new Uri("..\\..\\Pages\\AddProductMovePage.xaml", UriKind.RelativeOrAbsolute);
@@ -37,7 +38,7 @@ namespace WarehouseProject.Windows
 
         private void btnReference_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void btnGenerateReport_Click(object sender, RoutedEventArgs e)
